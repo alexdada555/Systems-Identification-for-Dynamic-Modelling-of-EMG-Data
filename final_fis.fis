@@ -1,0 +1,39 @@
+[System]
+Name='final_fis'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=5
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[7.7689859596181e-20 1]
+NumMFs=5
+MF1='in1mf1':'gaussmf',[0.106165225036002 7.7689859596181e-20]
+MF2='in1mf2':'gaussmf',[0.106165225036002 0.25]
+MF3='in1mf3':'gaussmf',[0.106165225036002 0.5]
+MF4='in1mf4':'gaussmf',[0.106165225036002 0.75]
+MF5='in1mf5':'gaussmf',[0.106165225036002 1]
+
+[Output1]
+Name='output'
+Range=[-1.21773174206659 34.6886786004084]
+NumMFs=5
+MF1='out1mf1':'constant',[-2.30090141452682]
+MF2='out1mf2':'constant',[14.1123433110817]
+MF3='out1mf3':'constant',[19.104874497189]
+MF4='out1mf4':'constant',[25.9402505579123]
+MF5='out1mf5':'constant',[32.8102686747875]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1
